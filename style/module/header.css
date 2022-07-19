@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.header__nav-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__nav-btn {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    line-height: 0;
+  }
+  .header__navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    transition: transform 0.36s ease-in-out;
+  }
+
+  .header__navigation_open {
+    transform: translateY(100%);
+  }
+}
