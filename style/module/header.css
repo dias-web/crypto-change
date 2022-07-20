@@ -35,6 +35,6 @@
   }
 
   .header__navigation_open {
-    transform: translateY(100%);
+    transform: translateY(calc(100% - 1px));
   }
 }

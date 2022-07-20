@@ -1,17 +1,12 @@
 .hero {
-  background: url("../../img/hero.jpg");
+  background-color: #000000;
+  background-image: url("../../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
-  max-height: 540px;
-  margin: 0 auto;
 }
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding-top: 127px;
   padding-bottom: 127px;
 }
@@ -38,7 +33,6 @@
 }
 
 .hero__title {
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 121px;
@@ -63,13 +57,12 @@
 }
 
 .hero__text {
+  max-width: 480px;
   font-family: "IBM Plex Sans", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 29px;
   color: #ffffff;
-  max-width: 480px;
   margin-bottom: 50px;
 }
 
@@ -82,16 +75,23 @@
   }
 }
 
+@media (max-width: 480px) {
+  .hero__text {
+    max-width: 230px;
+  }
+}
+
 .hero__button {
-  max-width: 232px;
-  padding: 11px 41px;
   background-color: #55c2ff;
-  color: #ffffff;
   border-radius: 8px;
-  border: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  color: #ffffff;
+  padding: 11px 11px;
+  max-width: 232px;
+  width: 100%;
+  border: 0;
   transition: background-color 0.36s ease-in-out;
 }
 
@@ -100,7 +100,6 @@
     font-size: 12px;
     line-height: 15px;
     max-width: 188px;
-    padding: 10px 30px;
   }
 }
 
