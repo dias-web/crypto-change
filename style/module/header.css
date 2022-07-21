@@ -15,6 +15,11 @@
 
 .header__nav-btn {
   display: none;
+  transition: color 0.36s ease-in-out;
+}
+
+.header__nav-btn:hover {
+  color: #55c2ff;
 }
 
 @media (max-width: 768px) {

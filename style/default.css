@@ -52,6 +52,7 @@ p {
 
 .overlay {
   position: fixed;
+  display: flex;
   inset: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.6);
@@ -63,15 +64,6 @@ p {
   transition-property: opacity, visibility;
   transition-duration: 0.36s;
   transition-timing-function: ease-in-out;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.overlay::after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
 }
 
 .overlay-open {
